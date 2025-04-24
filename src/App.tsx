@@ -77,7 +77,7 @@ export default function PortfolioPage(): React.ReactNode {
           </div>
         </div>
       </header>
-      <main className="flex-1">
+      <main className="flex-1 justify-center">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col md:flex-row items-center gap-8">
