@@ -32,7 +32,7 @@ export default function PortfolioPage(): React.ReactNode {
         <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
           <div className="flex gap-6 md:gap-10">
             <a href="#" className="flex items-center space-x-2">
-              <Code className="h-6 w-6" />
+              <Code className="h-6 w-6 ml-2" />
               <span className="inline-block font-bold">Dylan Brose</span>
             </a>
           </div>
@@ -72,13 +72,6 @@ export default function PortfolioPage(): React.ReactNode {
                 className="px-4 py-2 text-sm font-medium hover:text-primary"
               >
                 Interests
-              </a>
-              <a
-                href="#contact"
-                onClick={(e) => scrollToSection(e, "contact")}
-                className="px-4 py-2 text-sm font-medium hover:text-primary"
-              >
-                Contact
               </a>
             </nav>
           </div>
@@ -120,7 +113,7 @@ export default function PortfolioPage(): React.ReactNode {
               </div>
               <div className="md:w-1/4 flex-shrink-0">
                 <img
-                  src="https://via.placeholder.com/300"
+                  src="/src/assets/prof_headshot.jpg"
                   width={300}
                   height={300}
                   alt="Profile"
@@ -303,12 +296,18 @@ export default function PortfolioPage(): React.ReactNode {
             <div className="mx-auto grid justify-center gap-6 sm:grid-cols-2 lg:grid-cols-2 md:max-w-[64rem] mt-8">
               <Card className="flex flex-col h-full">
                 <CardHeader>
-                  <CardTitle>Codebug Game Engine</CardTitle>
+                  <CardTitle className="flex justify-between items-center">Codebug Game Engine
+                  <a href="https://github.com/xXDMOGXx/CodebugGame" target="_blank" rel="noopener noreferrer">
+                    <Button variant="ghost" size="sm" className="self-end">
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                        View
+                    </Button>
+                  </a></CardTitle>
                   <CardDescription>Custom game engine development</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <img
-                    src="https://via.placeholder.com/350x200"
+                    src="/src/assets/project_default.jpg"
                     width={350}
                     height={200}
                     alt="Codebug Game Engine"
@@ -327,20 +326,23 @@ export default function PortfolioPage(): React.ReactNode {
                     <Badge variant="outline">GLSL</Badge>
                     <Badge variant="outline">Rust</Badge>
                   </div>
-                  <Button variant="ghost" size="sm" className="self-end">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    View
-                  </Button>
                 </CardFooter>
               </Card>
               <Card className="flex flex-col h-full">
                 <CardHeader>
-                  <CardTitle>RoboSCAD</CardTitle>
+                  <CardTitle className="flex justify-between items-center">RoboSCAD
+                  <a href="https://github.com/xXDMOGXx/RoboSCAD" target="_blank" rel="noopener noreferrer">
+                    <Button variant="ghost" size="sm" className="self-end">
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                        View
+                    </Button>
+                  </a>
+                  </CardTitle>
                   <CardDescription>3D Modeling infrastructure for combat robots</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <img
-                    src="https://via.placeholder.com/350x200"
+                    src="/src/assets/project_default.jpg"
                     width={350}
                     height={200}
                     alt="RoboSCAD Project"
@@ -357,20 +359,16 @@ export default function PortfolioPage(): React.ReactNode {
                     <Badge variant="outline">Git</Badge>
                     <Badge variant="outline">3D Graphics</Badge>
                   </div>
-                  <Button variant="ghost" size="sm" className="self-end">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    View
-                  </Button>
                 </CardFooter>
               </Card>
               <Card className="flex flex-col h-full">
-                <CardHeader>
-                  <CardTitle>1lb Plastic Combat Robot</CardTitle>
+                <CardHeader className="gap-1.5">
+                  <CardTitle className="mt-2.5">1lb Plastic Combat Robot</CardTitle>
                   <CardDescription>Award-winning robot design and implementation</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <img
-                    src="https://via.placeholder.com/350x200"
+                    src="/src/assets/project_default.jpg"
                     width={350}
                     height={200}
                     alt="Combat Robot Project"
@@ -388,20 +386,23 @@ export default function PortfolioPage(): React.ReactNode {
                     <Badge variant="outline">3D Printing</Badge>
                     <Badge variant="outline">Robotics</Badge>
                   </div>
-                  <Button variant="ghost" size="sm" className="self-end">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    View
-                  </Button>
                 </CardFooter>
               </Card>
               <Card className="flex flex-col h-full">
                 <CardHeader>
-                  <CardTitle>MOGOS</CardTitle>
+                  <CardTitle className="flex justify-between items-center">MOGOS
+                  <a href="https://github.com/xXDMOGXx/MOGOS" target="_blank" rel="noopener noreferrer">
+                    <Button variant="ghost" size="sm" className="self-end">
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                        View
+                    </Button>
+                  </a>
+                  </CardTitle>
                   <CardDescription>Graphical operating system in Lua</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <img
-                    src="https://via.placeholder.com/350x200"
+                    src="/src/assets/project_default.jpg"
                     width={350}
                     height={200}
                     alt="MOGOS Project"
@@ -419,10 +420,6 @@ export default function PortfolioPage(): React.ReactNode {
                     <Badge variant="outline">Git</Badge>
                     <Badge variant="outline">OS Development</Badge>
                   </div>
-                  <Button variant="ghost" size="sm" className="self-end">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    View
-                  </Button>
                 </CardFooter>
               </Card>
             </div>
