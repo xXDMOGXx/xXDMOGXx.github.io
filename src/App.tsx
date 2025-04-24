@@ -113,7 +113,7 @@ export default function PortfolioPage(): React.ReactNode {
               </div>
               <div className="md:w-1/4 flex-shrink-0">
                 <img
-                  src="/src/assets/prof_headshot.jpg"
+                  src="/prof_headshot.jpg"
                   width={300}
                   height={300}
                   alt="Profile"
@@ -307,7 +307,7 @@ export default function PortfolioPage(): React.ReactNode {
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <img
-                    src="/src/assets/project_default.jpg"
+                    src="/project_default.jpg"
                     width={350}
                     height={200}
                     alt="Codebug Game Engine"
@@ -342,7 +342,7 @@ export default function PortfolioPage(): React.ReactNode {
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <img
-                    src="/src/assets/project_default.jpg"
+                    src="/project_default.jpg"
                     width={350}
                     height={200}
                     alt="RoboSCAD Project"
@@ -368,7 +368,7 @@ export default function PortfolioPage(): React.ReactNode {
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <img
-                    src="/src/assets/project_default.jpg"
+                    src="/project_default.jpg"
                     width={350}
                     height={200}
                     alt="Combat Robot Project"
@@ -402,7 +402,7 @@ export default function PortfolioPage(): React.ReactNode {
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <img
-                    src="/src/assets/project_default.jpg"
+                    src="/project_default.jpg"
                     width={350}
                     height={200}
                     alt="MOGOS Project"
