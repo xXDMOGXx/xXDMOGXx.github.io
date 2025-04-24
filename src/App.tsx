@@ -5,7 +5,6 @@ import {
   Linkedin,
   Mail,
   ExternalLink,
-  ChevronRight,
   Code,
   Server,
   Globe,
@@ -97,17 +96,6 @@ export default function PortfolioPage(): React.ReactNode {
                     Building robust applications with modern technologies. Passionate about game engines, robotics, and
                     creating efficient software solutions.
                   </p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <a href="#contact" onClick={(e) => scrollToSection(e, "contact")}>
-                    <Button>
-                      Get in touch
-                      <ChevronRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </a>
-                  <a href="#projects" onClick={(e) => scrollToSection(e, "projects")}>
-                    <Button variant="outline">View my work</Button>
-                  </a>
                 </div>
                 <div className="flex items-center gap-4 pt-4">
                   <a href="https://github.com/xXDMOGXx" target="_blank" rel="noopener noreferrer">
