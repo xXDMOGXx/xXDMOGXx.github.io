@@ -479,59 +479,7 @@ export default function PortfolioPage(): React.ReactNode {
             </div>
           </div>
         </section>
-
-        <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
-              <h2 className="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">Get In Touch</h2>
-              <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                Interested in working together? Feel free to reach out.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 mt-4">
-                <a href="mailto:dylanbrose1@gmail.com">
-                  <Button className="w-full sm:w-auto">
-                    <Mail className="mr-2 h-4 w-4" />
-                    Email Me
-                  </Button>
-                </a>
-                <a href="tel:+16827607687">
-                  <Button variant="outline" className="w-full sm:w-auto">
-                    <span className="mr-2">📱</span>
-                    (682) 760-7687
-                  </Button>
-                </a>
-                <a href="https://github.com/xXDMOGXx" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" className="w-full sm:w-auto">
-                    <Github className="mr-2 h-4 w-4" />
-                    GitHub
-                  </Button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
-      <footer className="w-full border-t py-6">
-        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row md:py-0">
-          <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © {new Date().getFullYear()} Dylan Brose. All rights reserved.
-          </p>
-          <div className="flex items-center gap-4">
-            <a href="https://github.com/xXDMOGXx" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" size="icon">
-                <Github className="h-4 w-4" />
-                <span className="sr-only">GitHub</span>
-              </Button>
-            </a>
-            <a href="mailto:dylanbrose1@gmail.com">
-              <Button variant="ghost" size="icon">
-                <Mail className="h-4 w-4" />
-                <span className="sr-only">Email</span>
-              </Button>
-            </a>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
